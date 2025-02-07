@@ -4,25 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Center Data</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="icons/icon-192x192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+        }
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Search Center Data</h1>
-    <input type="text" id="centerIdInput" placeholder="Enter Center ID">
-    <button onclick="searchData()">Search</button>
-    <table id="dataTable">
+
+    <h2>Search Center Data</h2>
+    <input type="text" id="searchInput" placeholder="Enter Center ID">
+    <button id="searchButton">Search</button>
+
+    <table>
         <thead>
             <tr>
                 <th>CenterID</th>
                 <th>CenterName</th>
                 <th>ClientID</th>
+                <th>ClientName</th>
+                <th>PhoneNo</th>
+                <th>PAR</th>
+                <th>Inst no (min)</th>
+                <th>Jan</th>
+                <th>Branch Name</th>
             </tr>
         </thead>
         <tbody id="tableBody">
-            <!-- Data will be inserted here -->
+            <!-- Search results will appear here -->
         </tbody>
     </table>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
