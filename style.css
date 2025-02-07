@@ -1,0 +1,125 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for Search Box */
+.search-container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Search Input & Button */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+/* Icon inside the button */
+button i {
+  font-size: 16px;
+}
+
+/* Table Styling */
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  max-height: 500px; /* Adjust for long tables */
+  overflow-y: auto; /* Enable scroll if needed */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Table Headers */
+th {
+  background-color: #4285F4;
+  color: white;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  text-align: left;
+}
+
+/* Table Cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 95%;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling */
+  }
+
+  table {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+}

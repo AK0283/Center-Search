@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Center Data</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Search Box -->
+    <div class="search-container">
+        <h2>Search Center Data</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter Center ID">
+            <button onclick="searchData()">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+    </div>
+
+    <!-- Table Container -->
+    <div class="table-container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>CenterID</th>
+                    <th>CenterName</th>
+                    <th>ClientID</th>
+                    <th>ClientName</th>
+                    <th>PhoneNo</th>
+                    <th>PAR</th>
+                    <th>Inst no (min)</th>
+                    <th>Jan</th>
+                    <th>Branch Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
