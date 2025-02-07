@@ -67,3 +67,8 @@ async function searchData() {
         tableBody.appendChild(tr);
     });
 }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/Center-Search/sw.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch((error) => console.log("Service Worker Failed", error));
+}
