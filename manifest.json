@@ -1,19 +1,18 @@
 {
   "name": "Search Center Data",
   "short_name": "CenterSearch",
-  "description": "A PWA for searching center data from Google Sheets",
-  "start_url": "index.html",
+  "start_url": "/Center-Search/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#4285F4",
+  "theme_color": "#007bff",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
